@@ -1,27 +1,70 @@
 /* Pages Specific Styles */
 
 /* Page Hero */
+.page-eyebrow {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.page-eyebrow::before {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 1px;
+  background: var(--primary-color);
+}
+
 .page-hero {
-    padding: 140px 2rem 80px;
-    text-align: center;
-    background: linear-gradient(135deg, rgba(1, 71, 81, 0.03) 0%, rgba(1, 71, 81, 0.08) 100%);
+  padding: 140px 2rem 80px;
+  text-align: left;
+  background: linear-gradient(110deg,
+    rgba(14,14,77,0.95) 0%,
+    rgba(14,14,77,0.80) 30%,
+    rgba(26,26,128,0.70) 70%);
 }
 
 .page-title {
-    font-family: 'Figtree', sans-serif;
-    font-size: 3.5rem;
-    margin-bottom: 1.5rem;
-    color: var(--text-dark);
-    letter-spacing: -0.03em;
-    font-weight: 800;
+  font-family: 'Figtree', sans-serif;
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  letter-spacing: -0.03em;
+  font-weight: 800;
 }
 
 .page-subtitle {
-    font-size: 1.3rem;
-    color: var(--text-medium);
-    max-width: 800px;
-    margin: 0 auto;
-    font-weight: 300;
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 800px;
+  margin: 0;
+  font-weight: 300;
+}
+
+.page-eyebrow {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.page-eyebrow::before {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.6);
 }
 
 /* Our Story */
@@ -95,7 +138,7 @@
 .value-card h3 {
     font-size: 1.3rem;
     margin-bottom: 1rem;
-    color: var(--text-dark);
+    color: var(--primary-color);
 }
 
 .value-card p {
@@ -227,21 +270,24 @@
 }
 
 .project-card {
-    background: var(--white);
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: var(--shadow-sm);
-    transition: var(--transition);
-    cursor: pointer;
+  background: var(--white);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  cursor: pointer;
+  border: 1px solid var(--gray-200);
+  align-self: start;
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-lg);
+  transform: translateY(-3px);
+  box-shadow: 0 2px 0 rgba(26,26,128,0.04), 0 18px 36px -16px rgba(26,26,128,0.18);
+  border-color: var(--primary-light);
 }
 
 .project-image {
-    height: 240px;
+    height: 300px;
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
     display: flex;
     align-items: center;
@@ -259,6 +305,7 @@
     gap: 1rem;
     margin-bottom: 1rem;
     font-size: 0.85rem;
+    align-items: flex-start;
 }
 
 .project-tag {
@@ -267,6 +314,8 @@
     padding: 0.25rem 0.75rem;
     border-radius: 4px;
     font-weight: 500;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .project-title {
@@ -279,6 +328,11 @@
     color: var(--text-medium);
     line-height: 1.6;
     margin-bottom: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-clamp: 3;
+    overflow: hidden;
 }
 
 .project-stats {
@@ -315,7 +369,7 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 3rem;
-    margin-top: 3rem;
+    align-items: start;
 }
 
 .blog-main {
@@ -395,9 +449,8 @@
 
 /* Sidebar */
 .blog-sidebar {
-    position: sticky;
-    top: 100px;
     height: fit-content;
+    align-self: start;
 }
 
 .sidebar-widget {
@@ -623,6 +676,11 @@
     flex-shrink: 0;
 }
 
+.contact-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
 .contact-item-content h3 {
     font-size: 1.1rem;
     margin-bottom: 0.25rem;
@@ -695,6 +753,26 @@
 
 .form-submit {
     margin-top: 1rem;
+}
+
+/* Impressum Page */
+.impressum-section h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.impressum-section ul {
+    padding-left: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.impressum-section ul li {
+    color: var(--text-medium);
+    line-height: 1.8;
+    margin-bottom: 0.25rem;
 }
 
 /* Responsive */
