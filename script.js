@@ -142,7 +142,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Observe elements that should animate on scroll
-const animateOnScroll = document.querySelectorAll('.feature-card, .project-card, .team-member, .blog-article');
+const animateOnScroll = document.querySelectorAll('.feature-card, .team-member ');
 animateOnScroll.forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
