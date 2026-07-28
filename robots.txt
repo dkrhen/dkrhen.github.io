@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /impressum
+Disallow: /privacy
+Disallow: /terms
+
+Sitemap: https://citylayers.eu/sitemap-index.xml
