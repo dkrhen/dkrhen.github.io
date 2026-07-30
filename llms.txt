@@ -1,0 +1,27 @@
+# City Layers
+
+> City Layers is a map-based community engagement platform that helps organisations involve communities in urban design, planning, and decisions about places. We help municipalities, transport operators, urban planners, NGOs and research institutions collect, map and act on community knowledge about how places work for people.
+
+## Company
+- Vienna, Austria. Grew out of participatory planning research at TU Wien.
+- Reached more than 10,000 people through mapping campaigns and platform deployments.
+
+## Products
+- Campaign: expert-led community mapping projects, run by the City Layers team for municipalities, planners and organisations.
+- Platform: a map-based engagement tool clients can run themselves to collect and analyse community input.
+
+## Pages
+- [Homepage](https://citylayers.eu/): overview of City Layers' approach to participatory mapping and place intelligence.
+- [Services](https://citylayers.eu/services): details on Campaign and Platform, and the sectors City Layers works with.
+- [Approach](https://citylayers.eu/approach): the methodology behind how City Layers collects and analyses community data.
+- [About](https://citylayers.eu/about): the team and origin story behind City Layers.
+- [Projects](https://citylayers.eu/projects): case studies from mapping campaigns.
+- [Blog](https://citylayers.eu/blog): articles on participatory mapping, urban planning and place intelligence.
+- [Glossary](https://citylayers.eu/glossary): definitions of key terms used in participatory mapping and place intelligence.
+- [Contact](https://citylayers.eu/contact): get in touch with the City Layers team.
+
+## Team
+- Lovro Koncar-Gamulin: strategy and business development.
+- Androniki Pappa: citizen science and engagement methodology.
+- Domagoj Krhen: product operations and market development.
+- Angelos Chronis: computational urban analysis.

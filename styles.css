@@ -20,7 +20,6 @@
     --shadow-lg: 0 8px 24px rgba(1, 71, 81, 0.15);
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --font-figtree: 'Figtree', sans-serif;
-    --font-space-grotesk: 'Space Grotesk', sans-serif;
 }
 
 * {
@@ -34,7 +33,7 @@ html {
 }
 
 body {
-    font-family: var(--font-figtree), var(--font-space-grotesk), sans-serif;
+    font-family: var(--font-figtree), sans-serif;
     color: var(--text-dark);
     line-height: 1.7;
     background: linear-gradient(135deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
@@ -460,6 +459,19 @@ section {
         grid-template-columns: 1fr;
         gap: 36px;
         margin-bottom: 48px;
+    }
+
+    .wwd-aside {
+        order: -1;
+    }
+
+    .who-compact-grid {
+    grid-template-columns: repeat(2, 1fr);
+    }
+
+    .who-compact-box svg {
+    width: 36px;
+    height: 36px;
     }
 }
 
