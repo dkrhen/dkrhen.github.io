@@ -1552,7 +1552,12 @@ section {
     }
 
     .footer-container {
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 1.5rem;
+    }
+
+    .footer-column:first-child {
+        grid-column: 1 / -1;
     }
 }
 
@@ -1623,9 +1628,6 @@ section {
     .what-we-do-inner {
         grid-template-columns: 1fr;
         gap: 2rem;
-    }
-    .footer-container {
-        grid-template-columns: 1fr;
     }
     .footer-bottom {
         flex-direction: column;

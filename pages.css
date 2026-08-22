@@ -191,6 +191,24 @@
     line-height: 1.7;
 }
 
+@media (max-width: 900px) {
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .values-grid-bottom {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+    .values-grid-bottom {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Team Section */
 .team-section {
     padding: 100px 2rem;
@@ -494,6 +512,7 @@
 .read-more:hover {
     gap: 0.75rem;
 }
+
 
 /* Sidebar */
 .blog-sidebar {
